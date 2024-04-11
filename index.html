@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olav Høysæther Opheim</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/6b06d4f7f7.js" crossorigin="anonymous"></script>
+</head>
+
+<!------------Navigation--------->
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/favicon.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Datasikkerhets student</p>
+            <h1>Hello, My name is <span>Olav Høysæther Opheim</span><br>From Norway</h1>
+
+        </div>
+    </div>
+</div>
+
+<!------------About--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Olav, I'm 21 years old coming from Bjørnafjorden, but live in Bergen. <br>
+                    I am currently on my last year studying "Informatikk: Datasikkerhet" (bachelor) at the <br>
+                    University of Bergen. 
+                </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Datasikkerhet</span><br>Designing Web/App interfaces</li>
+                            <li><span>Programmering</span><br>Web app development</li>
+                            <li><span>Other</span><br>Designing app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Grocery store</span><br>Part time employee    2019 - 2022</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>JOBB</li>
+                            <li><span>2015</span><br>UIB</li>
+                            <li><span>2014</span><br>VGS</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<!------------Expertise------------>
+<div id="expertise">
+    <div class="container">
+        <h1 class="sub-title">Areas of Expertise</h1>
+        <div class="expertise-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Programming</h2>
+                <p>Languages: Java, Python, SQL, CSS, HTML, JavaScript, C++, C. <br>
+                Software: MySQL, Bruno, Tableau. <br>
+                APIS: REST API.
+                </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield"></i>
+                <h2>Cyber Security</h2>
+                <p>Tools: Wireshark, Virutal Machines (VM), NMap, Burpe Suite, Hydra, Metasploit, GoBuster. <br>
+                    Resources: MITRE, OWASP Top 10, <br>
+                    Operative Systems: Linux, Windows, Mac OS.
+                </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Other</h2>
+                <p>Languages: Norwegian (native), English (fluent), Spanish (little). <br>
+                </p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------Portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/2024-game.png">
+                <div class="layer">
+                    <h3>Video Game</h3>
+                    <p>A video game called "2024" where the goal is to reach merge numbers together
+                        untill you reach 2024 without filling the whole board.</p>
+                        <a href="https://github.com/ollav12/2048-Game" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mega-marius.png">
+                <div class="layer">
+                    <h3>Video game</h3>
+                    <p>A video game called "Mega Marius" which is a "Super Mario Bros" inspired 2d game
+                        where you have to complete different levels to win the game.</p>
+                        <a href="https://git.app.uib.no/Christoffer.Slettebo/ctrl-alt-defeat" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/website.png">
+                <div class="layer">
+                    <h3>Web Application</h3>
+                    <p>Source code for this web application.</p>
+                        <a href="https://github.com/ollav12/personalWebsite" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <i class="fa-brands fa-square-github"></i>
+                <div class="layer-on">
+                    <h3>More Projects</h3>
+                    <p>Click to look at more cool projects i have created on GitHub.</p>
+                        <a href="https://github.com/ollav12?tab=repositories" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------Contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>olavhopheim@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/ollav12" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/olav-opheim/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Olav.</p>
+    </div>
+</div>
+</body>
+</html>
