@@ -1,185 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olav Høysæther Opheim</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.png">
-    <script src="/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/6b06d4f7f7.js" crossorigin="anonymous"></script>
-</head>
-
-<!------------Navigation--------->
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/favicon.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Newly Graduated in Computer Security</p>
-            <h1>Hello, My name is <span>Olav Høysæther Opheim</span><br>From Norway</h1>
-
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olav Opheim</title>
+    <link rel="icon" href="./images/logo.jpg" type="image/png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="desktop-nav">
+      <div class="logo"></div>
+      <div class="nav-container">
+        <ul class="nav-bar">
+          <li><a href="#introduction">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn btn-color-1 nav-resume-btn" onclick="window.open('./images/CV.pdf', '_blank')">
+          Resume
+        </button>
+      </div>
+    </nav>
+    <section id="introduction">
+      <div class="introduction">
+        <p class="hello-text">Hello, I'm</p>
+        <h1 class="name">Olav Høyæther Opheim</h1>
+        <p class="title">
+          Software Engineering student at University of Bergen
+        </p>
+        <p class="about">
+            I am 22 years old from Fusa, but live in Bergen where i currently study for a masters degree. <br>
+            My main interest during my studies so far have been software development, algorithm's and cyber security.
+            
+        </p>
+       <div class="btn-container">
+        <button
+        class="btn btn-color-2"
+        onclick="window.open('https://github.com/ollav12', '_blank')"
+      >
+          GitHub
+        </button>
+        <button 
+          class="btn btn-color-1" 
+          onclick="window.open('./images/CV.pdf')"
+        >
+          Resume
+        </button>
+      </div>
+      </div>
+    </section>
+    <section id="education">
+  <h2 class="section-title">Education</h2>
+  
+  <div class="education-item">
+      <h3 class="degree-title">Bachelor's degree in Informatics: Computer Security</h3>
+      <div class="education-info">
+        <p class="institution">University of Bergen</p>
+        <p class="years">2021 - 2024</p>
+      </div>
+      <p class="description">
+        This is an Informatics/Computer Science degree with a specialization in Cybersecurity. With this degree, we are prepared to work in both development and cybersecurity-related matters, making it a versatile qualification.
+      </p>
     </div>
-</div>
-
-<!------------About--------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>My name is Olav, I'm 21 years old coming from Bjørnafjorden, but live in Bergen. <br>
-                    I have recently finished a bachelor's degree in Computer Security at the<br>
-                    University of Bergen.
-                </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Cybersecurity</span><br>Designing Web/App interfaces</li>
-                            <li><span>Programmering</span><br>Web app development</li>
-                            <li><span>Other</span><br>Designing app development</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Grocery store</span><br>Part time employee (16%), Venjaneset Mat AS   Mar.2019 - Aug.2022
-                            <br>Stock replenishment: Responsible for restocking shelves and organizing the warehouse.
-                            <br>Fresh produce department: Managing the fresh produce section, including closing duties in the evenings.
-                            <br>Cashier: Operating the cash register, including handling lottery tickets and postal services.
-                            <br>Experience: Working in a store environment has helped me enhance my communication skills, 
-                            <br>gain experience in teamwork, and handle independent tasks. I have also learned to work under pressure during 
-                            <br>busy periods such as holidays and vacations.
-                        </li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Aug.2021 - Jun.2024</span><br>Univeristy of Bergen</li>
-                            <li><span>Aug.2018 - Jun.2021</span><br>Fusa Videregående Skole</li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    </div> 
-</div>
-
-<!------------Expertise------------>
-<div id="expertise">
-    <div class="container">
-        <h1 class="sub-title">Areas of Expertise</h1>
-        <div class="expertise-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Programming</h2>
-                <p>Languages: Java, Python, SQL, CSS, HTML, JavaScript.<br>
-                Software: MySQL, Bruno, Tableau, Docker. <br>
-                APIS: REST API.
-                </p>
-            </div>
-            <div>
-                <i class="fa-solid fa-shield"></i>
-                <h2>Cyber Security</h2>
-                <p>Tools: Wireshark, Virutal Machines (VM), NMap, Burpe Suite, Hydra, Metasploit, GoBuster. <br>
-                    Resources: MITRE, OWASP Top 10. <br>
-                    Operative Systems: Linux, Windows, Mac OS.
-                </p>
-            </div>
-            <div>
-                <i class="fa-solid fa-book"></i>
-                <h2>Other</h2>
-                <p>Languages: Norwegian (native), English (fluent). <br>
-                </p>
-            </div>
-        </div>
+  </div>
+  
+  <div class="education-item">
+    <div class="education-details">
+      <h3 class="degree-title">Master's degree in Software Engineering</h3>
+      <div class="education-info">
+        <p class="institution">University of Bergen</p>
+        <p class="years">2024 - 2026</p>
+      </div>
+      <p class="description">
+        I am currently studying for the Masters degree in Software Engineering to further my knowledge in the software engineering field.
+      </p>
     </div>
-</div>
-
-<!------------Project------------>
-<div id="project">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/2024-game.png">
-                <div class="layer">
-                    <h3>Video Game</h3>
-                    <p>A video game called "2024" where the goal is to reach merge numbers together
-                        untill you reach 2024 without filling the whole board.</p>
-                        <a href="https://github.com/ollav12/2048-Game" target="_blank"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/mega-marius.png">
-                <div class="layer">
-                    <h3>Video game</h3>
-                    <p>A video game called "Mega Marius" which is a "Super Mario Bros" inspired 2d game
-                        where you have to complete different levels to win the game.</p>
-                        <a href="https://git.app.uib.no/Christoffer.Slettebo/ctrl-alt-defeat" target="_blank"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/website.png">
-                <div class="layer">
-                    <h3>Web Application</h3>
-                    <p>Source code for this web application.</p>
-                        <a href="https://github.com/ollav12/personalWebsite" target="_blank"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <i class="fa-brands fa-square-github"></i>
-                <div class="layer-on">
-                    <h3>More Projects</h3>
-                    <p>Click to look at more cool projects i have created on GitHub.</p>
-                        <a href="https://github.com/ollav12?tab=repositories" target="_blank"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
+  </div>
+</section>
+<section id="projects">
+  <h2 class="section-title">Recent Projects</h2>
+  
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="./images/leauetracker.jpg" alt="League Tracker" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">League Tracker</h3>
+        <p class="project-description">
+          A comprehensive application for tracking and analyzing League of Legends player statistics, match history, and performance metrics. Built with a focus on providing detailed insights for competitive players.
+        </p>
+        <div class="technologies">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">REST API</span>
+          <span class="tech-tag">Database</span>
+          <span class="tech-tag">JavaFX</span>
         </div>
-    </div>
-</div>
-
-<!------------Contact------------>
-
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>olavhopheim@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://github.com/ollav12" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/olav-opheim/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <script src="https://tryhackme.com/badge/2132174" target="_blank"></script>
-                </div>
-                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
-                
-            </div>
+        <div class="project-links">
+          <button class="btn btn-color-2" onclick="window.open('https://github.com/ollav12/LeagueTracker', '_blank')">
+            GitHub
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('https://github.com/ollav12/LeagueTracker', '_blank')">
+            Live Demo
+          </button>
         </div>
+      </div>
     </div>
-    <div class="copyright">
-        <p>© 2024 Olav Høysæther Opheim. All rights reserved.</p>
+    
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="./images/2024-game.png" alt="2048 Game" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">2048 Game</h3>
+        <p class="project-description">
+          A recreation of the popular 2048 puzzle game where players combine tiles to reach the 2048 tile. Features include score tracking, game state management, and responsive design.
+        </p>
+        <div class="technologies">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">Local Storage</span>
+        </div>
+        <div class="project-links">
+          <button class="btn btn-color-2" onclick="window.open('https://github.com/ollav12/2048-Game', '_blank')">
+            GitHub
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('https://github.com/ollav12/2048-Game', '_blank')">
+            Live Demo
+          </button>
+        </div>
+      </div>
     </div>
-</div>
-</body>
+    
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="./images/mega-marius.png" alt="Mega Marius Game" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Mega Marius Game</h3>
+        <p class="project-description">
+          A platform game inspired by classic side-scrollers, built as a team project. The game features multiple levels, character abilities, enemies, and collectibles with a custom physics engine.
+        </p>
+        <div class="technologies">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">LibGDX</span>
+          <span class="tech-tag">Game Physics</span>
+          <span class="tech-tag">Collaboration</span>
+        </div>
+        <div class="project-links">
+          <button class="btn btn-color-2" onclick="window.open('https://git.app.uib.no/Christoffer.Slettebo/ctrl-alt-defeat', '_blank')">
+            GitHub
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('https://git.app.uib.no/Christoffer.Slettebo/ctrl-alt-defeat', '_blank')">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sub-section-title">Other Noteworthy Projects</h3>
+  
+  <div class="mini-projects-grid">
+    <!-- Mini Project 1 -->
+    <a href="https://github.com/ollav12/project3" target="_blank" class="mini-project">
+        <div class="mini-project-content">
+          <div class="mini-project-header">
+            <div class="folder-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="external-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </div>
+          </div>
+          <h4 class="mini-project-title">Music Visualizer</h4>
+          <p class="mini-project-description">Audio visualization tool that creates real-time graphics from music</p>
+          <div class="mini-technologies">
+            <span>P5.js</span>
+            <span>Web Audio API</span>
+            <span>Canvas</span>
+          </div>
+        </div>
+      </a>
+      
+        <!-- Mini Project 2 -->
+        <a href="https://github.com/ollav12/project3" target="_blank" class="mini-project">
+            <div class="mini-project-content">
+              <div class="mini-project-header">
+                <div class="folder-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </div>
+                  <div class="external-link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </div>
+              </div>
+              <h4 class="mini-project-title">Music Visualizer</h4>
+              <p class="mini-project-description">Audio visualization tool that creates real-time graphics from music</p>
+              <div class="mini-technologies">
+                <span>P5.js</span>
+                <span>Web Audio API</span>
+                <span>Canvas</span>
+              </div>
+            </div>
+          </a>
+      
+    <!-- Mini Project 3 -->
+    <a href="https://github.com/ollav12/project3" target="_blank" class="mini-project">
+      <div class="mini-project-content">
+        <div class="mini-project-header">
+            <div class="folder-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="external-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </div>
+        </div>
+        <h4 class="mini-project-title">Music Visualizer</h4>
+        <p class="mini-project-description">Audio visualization tool that creates real-time graphics from music</p>
+        <div class="mini-technologies">
+          <span>P5.js</span>
+          <span>Web Audio API</span>
+          <span>Canvas</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Mini Project 4 -->
+    <a href="https://github.com/ollav12/project4" target="_blank" class="mini-project">
+      <div class="mini-project-content">
+        <div class="mini-project-header">
+            <div class="folder-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="external-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </div>
+        </div>
+        <h4 class="mini-project-title">Recipe Finder</h4>
+        <p class="mini-project-description">Search and filter recipes by ingredients, dietary restrictions, and cuisine</p>
+        <div class="mini-technologies">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Mini Project 5 -->
+    <a href="https://github.com/ollav12/project5" target="_blank" class="mini-project">
+      <div class="mini-project-content">
+        <div class="mini-project-header">
+            <div class="folder-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="external-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </div>
+        </div>
+        <h4 class="mini-project-title">Budget Tracker</h4>
+        <p class="mini-project-description">Personal finance app for managing expenses and tracking spending habits</p>
+        <div class="mini-technologies">
+          <span>Vue.js</span>
+          <span>Chart.js</span>
+          <span>LocalStorage</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Mini Project 6 -->
+    <a href="https://github.com/ollav12/project6" target="_blank" class="mini-project">
+      <div class="mini-project-content">
+        <div class="mini-project-header">
+            <div class="folder-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="external-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </div>
+        </div>
+        <h4 class="mini-project-title">Password Manager</h4>
+        <p class="mini-project-description">Secure password storage with encryption and password strength analysis</p>
+        <div class="mini-technologies">
+          <span>Python</span>
+          <span>Cryptography</span>
+          <span>Tkinter</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  
+  <div class="contact-container">
+    <p class="contact-intro">
+      I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+    </p>
+    
+    <div class="contact-methods">
+      <a href="mailto:olavhopheim@gmail.com" class="contact-method">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </div>
+        <div class="contact-info">
+          <h3>Email</h3>
+          <p>olavhopheim@gmail.com</p>
+        </div>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/olav-opheim/" target="_blank" class="contact-method">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </div>
+        <div class="contact-info">
+          <h3>LinkedIn</h3>
+          <p>Connect with me</p>
+        </div>
+      </a>
+      
+      <a href="https://github.com/ollav12" target="_blank" class="contact-method">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </div>
+        <div class="contact-info">
+          <h3>GitHub</h3>
+          <p>Check out my code</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-nav">
+      <ul class="footer-links">
+        <li><a href="#introduction">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2025 Olav Høyæther Opheim. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+    <script src="script.js"></script>
+  </body>
 </html>
